@@ -96,11 +96,28 @@ a {
   letter-spacing: 0.02em;
   color: #212121;
   padding: 32px 0;
+  transition: color 250ms linear;
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--color-nav);
 }
+
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .header-link-mail,
 .header-link-tel {
   font-weight: 500;
@@ -112,6 +129,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 250ms linear;
 }
 
 .header-link-icon {
@@ -306,6 +324,7 @@ a {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+  transition: color 250ms linear, background-color 250ms linear;
 }
 
 .team-social-icon {
@@ -356,6 +375,7 @@ a {
   border-radius: 4px;
   width: 100%;
   height: 100%;
+  transition: color 250ms linear, border-color 250ms linear;
 }
 
 .clients-logo {
@@ -492,6 +512,7 @@ a {
   letter-spacing: 0.03em;
   color: #212121;
   padding: 6px 22px;
+  transition: color 250ms linear, background 250ms linear;
 }
 
 .prtf-btn:hover,
