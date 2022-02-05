@@ -243,14 +243,6 @@ a {
   padding-bottom: 94px;
 }
 
-.action-list {
-  display: flex;
-}
-
-.action-item + .action-item {
-  margin-left: 30px;
-}
-
 .action-title {
   font-weight: bold;
   font-size: 36px;
@@ -260,6 +252,37 @@ a {
   color: #212121;
   margin-bottom: 50px;
 }
+
+.action-list {
+  display: flex;
+}
+
+.action-item + .action-item {
+  margin-left: 30px;
+}
+
+.action-item {
+  position: relative;
+}
+
+.action-label {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+}
+
 /*----------------Наша команда------------------*/
 .team {
   background: #f5f4fa;
@@ -475,6 +498,7 @@ a {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
+  transition: color 250ms linear, background-color 250ms linear;
 }
 
 .footer-social-icon {
