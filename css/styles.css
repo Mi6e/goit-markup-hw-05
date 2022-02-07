@@ -577,7 +577,8 @@ a {
   margin-bottom: 30px;
 }
 
-.prtf-item:hover .prtf-top-text {
+.prtf-link-card:hover .prtf-top-text,
+.prtf-link-card:focus .prtf-top-text {
   transform: translateY(0);
 }
 
@@ -607,7 +608,7 @@ a {
   background: rgba(33, 150, 243, 0.9);
   height: 100%;
   width: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
